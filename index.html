@@ -263,9 +263,9 @@
     .timetable-desktop { display: none; }
     .timetable-mobile { display: block; }
 
-    .footer { display: flex; flex-direction: column; gap: 16px; padding: 22px 20px; }
-    .footer-left { font-size: 13px; line-height: 1.7; text-align: left; }
-    .footer-contact { justify-content: center; white-space: normal; text-align: center; width: 100%; box-sizing: border-box; }
+    .footer { display: flex !important; flex-direction: column !important; grid-template-columns: unset !important; gap: 16px; padding: 22px 20px; }
+    .footer-left { font-size: 13px; line-height: 1.7; }
+    .footer-contact { width: 100%; justify-content: center; }
   }
 
   @media (min-width: 701px) {
@@ -572,7 +572,6 @@
     font-size: 12px;
     color: #007DD2;
     font-weight: 600;
-    white-space: nowrap;
   }
 </style>
 </head>
